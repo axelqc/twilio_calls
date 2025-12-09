@@ -69,7 +69,7 @@ except Exception as e:
 # ---------------------------
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger("twilio_groq")
-
+load_dotenv()
 TWILIO_SID = os.getenv("TWILIO_ACCOUNT_SID")
 TWILIO_AUTH = os.getenv("TWILIO_AUTH_TOKEN")
 TWILIO_NUMBER = os.getenv("TWILIO_PHONE_NUMBER")
